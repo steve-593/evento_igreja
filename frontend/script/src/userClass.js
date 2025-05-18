@@ -1,4 +1,4 @@
-import { serverBridge } from "./serverComunication";
+import { serverBridge } from "./serverComunication.js";
 
 class User {
     criarUsuario(nomeCompleto, senha) {
@@ -17,5 +17,14 @@ class User {
     escolha(opcaoEscolhida) {
         this.opcaoEscolhida = opcaoEscolhida;
     }
+
+
+
+    teste() {
+        console.log(this.nomeCompleto);
+        console.log(this.senha);
+    }
 }
+
+let user = new User();
 
