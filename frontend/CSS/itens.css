@@ -1,0 +1,139 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f1955;
+    background-image: url(../images/background/horizontal/placas_na_entrada.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.login {
+    background-color: #212121;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    color: #f2f2f2;
+}
+
+.login > h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.login_input {
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #121212;
+    color: #f2f2f2;
+    outline: none;
+}
+
+.login_input:focus {
+    outline: 2px solid #f2f2f2;
+}
+
+.login_button {
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #ddd;
+    cursor: pointer;
+    color: #121212;
+}
+
+.login_button:active {
+    background-color: #aaa;
+}
+
+.extremidades {
+    background-color: #0f1955;
+    color: #ddd;
+}
+
+#header {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.tela {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100dvh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.choises-area {
+    border: 5px solid #212121;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.choises-area > p {
+    margin-bottom: 10px;
+}
+
+.choises-area > h2 {
+    margin-bottom: 20px;
+}
+
+.option-btn {
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+main > h2 {
+    text-align: center;
+    padding: 10px 50px;
+}
+
+@media screen and (orientation: portrait) {
+    .container{
+        background-image: url(../images/background/vertical/pastores-editado.png);
+
+    }
+}
+  
