@@ -1,21 +1,21 @@
-import dotenv from 'dotenv';
-const { Client } = pg;
-dotenv.config();
+import { serverBridge } from "./serverComunication";
 
-class CriarConta {
-    constructor(nomeCompleto, senha) {
+class User {
+    criarUsuario(nomeCompleto, senha) {
         this.nomeCompleto = nomeCompleto;
         this.senha = senha;
     }
 
-    enviarParaBancoDeDados(nomeCompleto, senha) {
+    login(nomeCompleto, senha) {
+        if (this.nomeCompleto === nomeCompleto && this.senha === senha) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
+    escolha(opcaoEscolhida) {
+        this.opcaoEscolhida = opcaoEscolhida;
     }
 }
 
-document.getElementById('botaoCriarConta').onclick = () => {
-    const nomeCompleto = document.getElementById('nomeCompleto').value;
-    const senha = document.getElementById('senha').value;
-
-    let t = new CriarConta('testeNome', 'testeSenha');
-}

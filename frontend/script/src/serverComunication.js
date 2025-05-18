@@ -1,20 +1,17 @@
+let webSocket;
 
+export function serverBridge (msg_de_ida) {
+    webSocket = new WebSocket('ws://localhost:8080');
+    webSocket.onopen = () => {
+    webSocket.send(JSON.stringify(msg_de_ida));
 
-let ws;
+    webSocket.onmessage = ({ msg_de_volta} ) => {
+        let data = JSON.parse(msg_de_volta);
+        
 
-ws = new WebSocket('ws://localhost:8080');
-//ws.onmessage = processMessage;
+    }
 
-
-let y = {
-    id: 1,
-    nome: "Lucas",
-    idade: 20
+    webSocket.close();
+    }
 }
 
-ws.onopen = () => {
-    ws.send(JSON.stringify(y));
-}
-
-document.getElementById('click').onclick = () => {
-}

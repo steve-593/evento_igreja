@@ -14,6 +14,6 @@ wss.on('connection', (ws) => {
     ws.on('message', (message) => {
         let data = JSON.parse(message);
         console.log(`Recebido: ${i++}`);
-        console.log(`Recebido: ${data.id}`);
+        console.log(`Recebido: ${data.nome}`);
     });
-})
+});
