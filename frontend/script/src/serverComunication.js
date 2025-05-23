@@ -1,7 +1,7 @@
 let webSocket;
 
 export function serverBridge (msg_de_ida) {
-    webSocket = new WebSocket('ws://localhost:8080');
+    webSocket = new WebSocket('ws://localhost:4433');
     webSocket.onopen = () => {
     webSocket.send(JSON.stringify(msg_de_ida));
 
