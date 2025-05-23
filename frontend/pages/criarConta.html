@@ -18,13 +18,13 @@
 
             <form class="form">
 
-                <input type="text" class="input" placeholder="Seu Nome Completo" id="nomeCompleto" required>
+                <input type="text" class="input" placeholder="Seu Nome Completo" id="nomeCompleto" minlength="8" required>
 
-                <input type="text" class="input" placeholder="Ex: (22)981334455" id="telefone" required>
+                <input type="text" class="input" placeholder="Ex: 22981334455" id="telefone" minlength="11" maxlength="11" required>
 
                 <input type="password" class="input" placeholder="Senha" minlength="4" id="senha" required>
                 
-                <input type="button" class="button" value="Criar conta" id="botaoCriarConta">
+                <input type="submit" class="button" value="Criar conta" id="botaoCriarConta">
 
             </form>
 
