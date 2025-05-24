@@ -6,23 +6,24 @@ class User {
         this.telefone = telefone;
         this.senha = senha;
     }
-
+    
     login(telefone, senha) {
         
     }
-
+    
     escolha(opcaoEscolhida) {
         this.opcaoEscolhida = opcaoEscolhida;
     }
-
-    teste() {
+    
+    enviarServer() {
         console.log(this.nomeCompleto);
         console.log(this.senha);
     }
 }
 
-let botao = document.getElementById("botaoCriarConta");
-botao.addEventListener("click", verificacaoCriarUsuario)
+
+const botao = document.getElementById("botaoCriarConta");
+botao.addEventListener("click", verificacaoCriarUsuario);
 
 function verificacaoCriarUsuario() {
     const nome = document.getElementById("nomeCompleto");
