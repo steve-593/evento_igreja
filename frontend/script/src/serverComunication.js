@@ -1,8 +1,6 @@
-import { User } from './userClass.js';
-
 let webSocket;
 
-export function serverBridge (msg_de_ida) {
+export async function serverBridge (msg_de_ida) {
     webSocket = new WebSocket('ws://localhost:4433');
     webSocket.onopen = () => {
         webSocket.send(JSON.stringify(msg_de_ida));

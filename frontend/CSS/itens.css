@@ -130,10 +130,3 @@ main > h2 {
     padding: 10px 50px;
 }
 
-@media screen and (orientation: portrait) {
-    .container{
-        background-image: url(../images/background/vertical/pastores-editado.png);
-
-    }
-}
-  
